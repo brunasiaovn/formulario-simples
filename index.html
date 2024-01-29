@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<body>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Inscrição </title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <h1 id="title">Formulário de Inscrição</h1>
+  <p id="description">
+    Preencha os detalhes
+  </p>
+  <form id="survey-form">
+    <fieldset>
+      <label id="name-label">Digite seu nome: <input id="name" type="text" placeholder="Ex: Maria Aparecida"
+          required /></label>
+    </fieldset>
+    <fieldset>
+      <label id="email-label"> Digite seu email: <input id="email" type="email" placeholder="Ex: joaodasilva26@gmail.com" required /></label>
+    </fieldset>
+    <fieldset>
+      <label id="number-label"> Digite sua idade:<input id="number" type="number" min="18" max="70" placeholder="Ex: 18"
+          required /></label>
+    </fieldset>
+    <fieldset>
+      <label> Por que você quer aprender teoria musical?
+        <select id="dropdown" name="dropdown">
+          <option value=""> Selecione um </label>
+      <option value="1"> Eu estou apenas interessado. </option>
+      <option value="2"> Eu quero seguir carreira. </option>
+      <option value="3"> Nada sério.</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <label for="personal-account">Conta pessoal<input id="personal-account" type="radio" name="account-type"
+          value="personal-account" class="inline" required />
+        <label for="business-account"> Conta empresarial<input id="business-account" type="radio" name="account-type"
+            value="business-account" class="inline" required />
+        </label>
+    </fieldset>
+    <fieldset>
+      <label>Selecione o gênero no qual você está interessado:</label>
+      <label for="pop"> Pop</label>
+      <input id="pop" type="checkbox" name="pop" value="pop" />
+      <label for="Jazz"> Jazz</label>
+      <input id="Jazz" type="checkbox" name="Jazz" value="Jazz" />
+      <label for="Indie"> Sertanejo</label>
+      <input id=" Indie" type="checkbox" name=" Indie" value="Indie" />
+      <label for="Rock">Rock</label>
+      <input id=" Rock" type="checkbox" name=" Rock" value="Rock" />
+      <label for="Funk">Funk</label>
+      <input id=" Funk" type="checkbox" name=" Funk" value="Funk" />
+      <label for="Others">Outros</label>
+      <input id=" Others" type="checkbox" name="Others" value="Others" />
+    </fieldset>
+    <fieldset>
+      <label for="bio"> Conte-nos mais sobre você:
+        <textarea id="bio" name="bio" placeholder="Eu amo ouvir música."></textarea>
+        <input id="submit" type="submit" value="Enviar" />
+  </form>
+</body>
+
+</html>
